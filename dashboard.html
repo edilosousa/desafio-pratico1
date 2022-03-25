@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+
+    <link rel="stylesheet" href="bootstrap-4.0.0/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <div class="container-fluid">
+        <div class="row mt-2">
+            <div class="col-sm-12">
+                <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                    <a class="navbar-brand" href="#">Dashboard</a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse"
+                        data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <form class="form-inline my-2 my-lg-0">
+                            <button class="btn btn-outline-success my-2 my-sm-0" type="button"
+                                onclick="window.location.href = 'login.html'">Sair</button>
+                        </form>
+                    </div>
+                </nav>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-2 ml-3" id="lista">
+                <ul>
+                    <li>ID</li>
+                    <li>Nome do time</li>
+                    <li>Estado UF</li>
+                </ul>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-12 mt-4">
+                <table class="table table-hover" id="tabela">
+                    <thead>
+                        <th>#ID</th>
+                        <th>Nome</th>
+                        <th>Estado</th>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>Flamengo</td>
+                            <td>Rio de Janeiro</td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>São Paulo</td>
+                            <td>São Paulo</td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>Corinthians</td>
+                            <td>São Paulo</td>
+                        </tr>
+                        <tr>
+                            <td>4</td>
+                            <td>Manaus FC</td>
+                            <td>Amazonas</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
