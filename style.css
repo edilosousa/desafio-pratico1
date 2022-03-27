@@ -1,15 +1,8 @@
 body{
-    background-color: #6495ED;
+    
 }
 #tabela{
     background-color: aliceblue;
-}
-
-#div-login{
-    text-align: center;
-}
-#div-login:hover{
-    text-align: left;
 }
 
 #lista{
@@ -22,3 +15,46 @@ body{
     background-color: slategrey;
     color: white;
 }
+#btn-efect{
+    margin-left: 34%;
+    position: relative;
+    animation: mymove 3s;
+}
+
+@keyframes mymove {
+    0%{
+        left: 0%;
+    }
+    100%{
+        left: 26%;
+    }
+    
+  }
+
+  .grid-css{
+    width: 80%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 75% 25%;
+    grid-template-rows: 100px 450px 150px;
+    grid-template-areas:    "cabecalho cabecalho"
+                            "secao barra-lateral"
+                            "rodape rodape";
+  }
+  header{
+      grid-area: cabecalho;
+      background-color: slategrey;
+  }
+  section{
+      grid-area: secao ;
+  }
+  aside{
+      grid-area: barra-lateral;
+      background-color: aqua;
+  }
+  footer{
+      grid-area: rodape;
+      background-color: slategrey;
+      display: flex;
+      justify-content: space-evenly;
+  }
